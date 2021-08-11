@@ -29,15 +29,15 @@ function starttimer() {
         quizTimeEl.textContent = timerCount;
         if (timerCount <= 0) {
             timerCount = 0;
-            quizTimeEl.textContent = timerCount;
+            quizTimeEl.textContent = ("There's only" + timerCount + "seconds remaining");
         }
 
-        // if (timerCount === 0) {
-        //     clearInterval(timer);
-        //     quizend();
-
+        if (timerCount === 0) {
+            clearInterval(timer);
+            quizend();
+        }
     }, 1000)
-    
+
     questions();
 }
 // create a function get questions
@@ -53,7 +53,6 @@ function questions() {
         choiceBtn.setAttribute("value", choice)
 
         questionTextEl.appendChild(choiceBtn);
-
     })
 }
 // function to check if user was right or wrong
@@ -66,7 +65,7 @@ function answers() {
         console.log("Wrong Answer!")
         timerCount - 5;
     }
-    if(this.value = questionsArr[index].answer) {
+    if (this.value = questionsArr[index].answer) {
         console.log("Correct!")
         score++;
         var showScore = document.createElement('h4');
@@ -75,26 +74,24 @@ function answers() {
     }
     index++;
     questions();
-
 }
 
 // need a function to end the quiz
 function quizend() {
-
-
+    endQuizEl.textContent = "Game Over!"
 }
+
 
 // function that ends quiz when time has hit 0
 function timeover() {
-    // if () {
-
-    // }
+   
 }
 
 
 // function to save the high score to local storage
 function highscores() {
 
+    localStorage.setItem("score", score)
 }
 
 
@@ -130,13 +127,6 @@ var questionsArr = [
 
     },
 ]
-
-
-
-
-
-
-
 
 
 startButtonEl.addEventListener("click", quizstart)
