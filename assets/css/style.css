@@ -1,0 +1,14 @@
+.hide {
+  display: none;
+}
+
+.large-font {
+    font-size: 3.5em;
+    text-align:center;
+  }
+
+#start-button {
+    text-align: center;
+    padding: 20px;
+    
+}
