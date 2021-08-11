@@ -41,33 +41,33 @@ function highscores() {
 
 var questions = [
 {
-    title: "", 
-    choices: [],
-    answer: "",
+    title: "Who won the Rainbow 6 Siege Inviational 2020?", 
+    choices: ['SSG', 'G2', 'TSM', 'NIP'],
+    answer: "SSG",
 
 },
 {
-    title: "", 
-    choices: [],
-    answer: "",
+    title: "What is the longest running anime?", 
+    choices: ['Naruto', 'MHA', 'OnePiece', 'Bleach'],
+    answer: "OnePiece",
 
 },
 {
-    title: "", 
-    choices: [],
-    answer: "",
+    title: "Where is the Statue of Liberty located?", 
+    choices: ['Paris', 'Italy', 'Chicago', 'NewYork'],
+    answer: "NewYork",
 
 },
 {
-    title: "", 
-    choices: [],
-    answer: "",
+    title: "What color is the sky?", 
+    choices: ['Black', 'Pink', 'Blue', 'Aqua'],
+    answer: "Blue",
 
 },
 {
-    title: "", 
-    choices: [],
-    answer: "",
+    title: "How fun is coding?", 
+    choices: ['Insanly', 'Moderately', 'Super', 'Incredibly'],
+    answer: "Insanely",
 
 },
 ]
