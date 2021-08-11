@@ -1,7 +1,6 @@
 // Need variables to keep track of quiz
 var time = 0;
 var timerCount;
-var score = 0;
 var index = 0;
 
 // needs variables to re. the Dom Elements
@@ -61,12 +60,19 @@ function questions() {
 // check how many questions there are if there are no more questions end quiz, if more questions get next question
 
 function answers() {
+    var score = 0;
     console.log(this.value);
     if (this.value != questionsArr[index].answer) {
         console.log("Wrong Answer!")
+        timerCount - 5;
     }
-
-
+    if(this.value = questionsArr[index].answer) {
+        console.log("Correct!")
+        score++;
+        var showScore = document.createElement('h4');
+        showScore.textContent = ('Your Score: ' + score);
+        quizScreenEl.appendChild(showScore);
+    }
     index++;
     questions();
 
@@ -75,11 +81,14 @@ function answers() {
 // need a function to end the quiz
 function quizend() {
 
+
 }
 
 // function that ends quiz when time has hit 0
 function timeover() {
+    // if () {
 
+    // }
 }
 
 
