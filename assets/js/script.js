@@ -9,6 +9,39 @@ var quizTimeEl = document.createElement('h2');
 var endQuizEl = document.getElementById('game-over');
 var quizScreenEl = document.getElementById('quizscreen');
 
+var questionsArr = [
+    {
+        title: "Who won the Rainbow 6 Siege Inviational 2020?",
+        choices: ['SSG', 'G2', 'TSM', 'NIP'],
+        answer: "SSG",
+
+    },
+    {
+        title: "What is the longest running anime?",
+        choices: ['Naruto', 'MHA', 'OnePiece', 'Bleach'],
+        answer: "OnePiece",
+
+    },
+    {
+        title: "Where is the Statue of Liberty located?",
+        choices: ['Paris', 'Italy', 'Chicago', 'NewYork'],
+        answer: "NewYork",
+
+    },
+    {
+        title: "What color is the sky?",
+        choices: ['Black', 'Pink', 'Blue', 'Aqua'],
+        answer: "Blue",
+
+    },
+    {
+        title: "How fun is coding?",
+        choices: ['Insanly', 'Moderately', 'Super', 'Incredibly'],
+        answer: "Insanely",
+
+    },
+]
+
 
 // Need function to start quiz
 function quizstart() {
@@ -95,38 +128,6 @@ function highscores() {
 }
 
 
-var questionsArr = [
-    {
-        title: "Who won the Rainbow 6 Siege Inviational 2020?",
-        choices: ['SSG', 'G2', 'TSM', 'NIP'],
-        answer: "SSG",
-
-    },
-    {
-        title: "What is the longest running anime?",
-        choices: ['Naruto', 'MHA', 'OnePiece', 'Bleach'],
-        answer: "OnePiece",
-
-    },
-    {
-        title: "Where is the Statue of Liberty located?",
-        choices: ['Paris', 'Italy', 'Chicago', 'NewYork'],
-        answer: "NewYork",
-
-    },
-    {
-        title: "What color is the sky?",
-        choices: ['Black', 'Pink', 'Blue', 'Aqua'],
-        answer: "Blue",
-
-    },
-    {
-        title: "How fun is coding?",
-        choices: ['Insanly', 'Moderately', 'Super', 'Incredibly'],
-        answer: "Insanely",
-
-    },
-]
 
 
 startButtonEl.addEventListener("click", quizstart)
