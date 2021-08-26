@@ -1,3 +1,7 @@
+* {
+  background-color: cadetblue;
+}
+
 .hide {
   display: none;
 }
@@ -5,6 +9,8 @@
 .large-font {
     font-size: 3.5em;
     text-align:center;
+    padding: 20px;
+    margin: 0 auto;
   }
 
 #start-button {
@@ -17,4 +23,9 @@
   max-width: 660px;
   border: 1px solid black;
   margin: 0 auto;
+}
+
+#game-over {
+  font-size: 20px;
+  text-align: center;
 }
